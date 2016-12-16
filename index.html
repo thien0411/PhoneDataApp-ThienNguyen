@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phone App</title>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="phoneApps.js"></script>
+  </head>
+
+
+  <body>
+
+
+  <div class="container">
+
+    <div class="jumbotron">
+    <h1>Phone Apps</h1>
+        <div id="errorArea"></div>
+        <p>This app will help you track your cell phone usage. </p>
+
+        <div class="container">
+
+            <div class="row">
+          <div class="col-md-3"><p>Enter the number of minutes in the plan per 30 day period:  </p></div>
+         <div class="col-md-3"><input type="text" id="minute" value="0"/></div>
+      </div>
+
+
+      <div class="row">
+         <div class="col-md-3"><p>Enter the current day in the 30 day period:  </p></div>
+         <div class="col-md-3"><input type="text" id="day" value="0"/></div>
+       </div>
+
+
+
+      <div class="row">
+        <div class="col-md-3"><p>Enter the total number of minutes used so far: </p></div>
+        <div class="col-md-3"><input type="text" id="minutesUsed" value="0"/></div>
+      </div>
+
+        <div class="row">
+
+            <button type="button" class="btn btn-lrg btn-primary" onclick="result()">Result</button>
+        </div>
+
+
+          <div class="row" id="resultsDiv"></div>
+
+
+    </div>
+
+  </body>
+</html>
